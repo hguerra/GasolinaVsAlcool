@@ -1,46 +1,56 @@
-<div id="login-page" class="row">
+<div id="login-page" class="row" style="margin-top: 5rem;">
  <div class="row">
-    <div class="input-field col s12 center">
-      <p class="center login-form-text">Devo abastecer com</p>
-       <p class="center login-form-text">ÁLCOOL ou GASOLINA?</p>
+    <div class="col s12 center">
+      <h3 class="center">
+        <span class="grey-text text-darken-1">Devo abastecer com</span>
+      </h3>
+      <h3 class="center">
+        <span class="card-title green-text text-accent-3" style="font-size">ÁLCOOL</span> 
+        <span class="grey-text text-darken-1">ou</span> 
+        <span class="red-text text-accent-3">GASOLINA?</span>
+      </h3>
     </div>
   </div>
 
   <div class="col s12 z-depth-6 card-panel">
-    <form class="login-form">
+    <form class="login-form" style="margin-top: 2rem;">
+
       <div class="row margin">
-      <div class="col s2">
-         <%= image_tag '/icon-alcool.png', class: 'img-fluid logo-box'%>
+        <div class="col s4">
+          <%= image_tag '/icon-alcool.png', class: 'responsive-img'%>
         </div>
-        <div class="input-field offset-s2 col s6">
-          <i class="mdi-social-person-outline prefix"></i>
+
+        <div class="input-field  col s8">
           <input class="validate" id="alcool" type="number">
           <label for="alcool" data-error="wrong" data-success="right" class="center-align">Preço do Álcool</label>
         </div>
       </div>
+
       <div class="row margin">
-        <div class="col s2">
-         <%= image_tag '/icon-gasolina.png', class: 'img-fluid logo-box'%>
-        </div>
-        <div class="input-field offset-s2 col s6">
-          <i class="mdi-action-lock-outline prefix"></i>
-          <input id="gasolina" type="number">
-          <label for="gasolina">Preço da Gasolina</label>
-        </div>
+          <div class="col s4">
+            <%= image_tag '/icon-gasolina.png', class: 'responsive-img'%>
+          </div>
+
+          <div class="input-field col s8">
+            <input id="gasolina" type="number">
+            <label for="gasolina">Preço da Gasolina</label>
+          </div>
       </div>
+
       <div class="row">
         <div class="input-field col s12">
           <a class="waves-effect waves-light btn-large offset-s2 col s8 blue accent-2">CALCULAR</a>
         </div>
       </div>
+
     </form>
   </div>
 
   <div class="row">
-    <div class="input-field col s6 m6 l6">
+    <div class="input-field col s4 m4 l4">
     </div>
-    <div class="input-field col s6 m6 l6">
-       <%= image_tag '/logo.png', class: 'img-fluid logo-box'%>
+    <div class="input-field col s8 m8 l8">
+       <%= image_tag '/logo.png', class: 'responsive-img'%>
     </div>
   </div>
 </div>
