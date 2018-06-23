@@ -5,7 +5,7 @@
         <span class="grey-text text-darken-1">Devo abastecer com</span>
       </h3>
       <h3 class="center">
-        <span class="card-title green-text text-accent-3" style="font-size">ÁLCOOL</span> 
+        <span class="green-text text-accent-3" style="font-size">ÁLCOOL</span> 
         <span class="grey-text text-darken-1">ou</span> 
         <span class="red-text text-accent-3">GASOLINA?</span>
       </h3>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="input-field  col s8">
-          <input class="validate" id="alcool" type="number">
+          <input class="validate" id="alcool" type="number" step="0.01">
           <label for="alcool" data-error="wrong" data-success="right" class="center-align">Preço do Álcool</label>
         </div>
       </div>
@@ -32,15 +32,26 @@
           </div>
 
           <div class="input-field col s8">
-            <input id="gasolina" type="number">
-            <label for="gasolina">Preço da Gasolina</label>
+            <input id="gasolina" type="number" step="0.01">
+            <label for="gasolina" data-error="wrong" data-success="right" class="center-align">Preço da Gasolina</label>
           </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <a class="waves-effect waves-light btn-large offset-s2 col s8 blue accent-2">CALCULAR</a>
+          <a id="btn_calcular" class="waves-effect waves-light btn-large offset-s2 col s8 blue accent-2">CALCULAR</a>
         </div>
+      </div>
+
+       <div id="div_resultado" class="row margin" style="margin-top: 2rem;">
+        <hr>
+       <div class="input-field col s8">
+        <p style="font-size: 1.4rem;">
+          <span class="grey-text text-darken-1">É mais ecônomico</span>
+          <span class="grey-text text-darken-1">abastecer com </span>
+          <span id="resultado"></span>
+        </p>
+       </div>
       </div>
 
     </form>
